@@ -1,0 +1,130 @@
+###############################################
+# ANDROID ENTERPRISE .gitignore
+# Hardened for multi-module, CI/CD, and security
+###############################################
+
+###############
+# IDE / Editor
+###############
+*.iml
+.idea/
+!.idea/codeStyles
+!.idea/runConfigurations
+!.idea/fileTemplates
+!.idea/icon.png
+
+# VS Code
+.vscode/
+
+#################
+# Gradle / Build
+#################
+.gradle/
+build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Gradle caches
+.gradle/daemon/
+.gradle/native/
+.gradle/wrapper/
+
+#########################
+# Local machine settings
+#########################
+local.properties
+*.local
+
+#########################
+# Android Generated Files
+#########################
+captures/
+outputs/
+generated/
+.externalNativeBuild/
+.cxx/
+
+#########################
+# Logs
+#########################
+*.log
+
+#########################
+# OS Junk
+#########################
+.DS_Store
+Thumbs.db
+
+#########################
+# Security / Secrets
+#########################
+*.jks
+*.keystore
+*.pem
+*.p12
+*.key
+*.crt
+*.der
+
+# Prevent accidental secret commits
+secrets.properties
+*.env
+.env.*
+
+#########################
+# APK / AAB / Artifacts
+#########################
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+#########################
+# Cache / Temp
+#########################
+.cache/
+tmp/
+temp/
+*.tmp
+
+#########################
+# Kotlin / Java
+#########################
+*.ktlint-cache
+*.kotlin_module
+
+#########################
+# Lint / Reports
+#########################
+lint/intermediates/
+lint/generated/
+lint/tmp/
+lintReports/
+
+#########################
+# Testing
+#########################
+test-results/
+coverage/
+jacoco/
+*.ec
+
+#########################
+# CI/CD
+#########################
+ci/
+ci-cache/
+build-cache/
+reports/
+artifacts/
+
+#########################
+# Misc
+#########################
+*.orig
+*.rej
+*.bak
+*.swp
+*.swo

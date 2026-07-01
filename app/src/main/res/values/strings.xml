@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleHelloWorld</string>
+    <string name="hello_world_from_static_text">Hello World from Static text!</string>
+    <string name="loading">Loading ...</string>
+</resources>
